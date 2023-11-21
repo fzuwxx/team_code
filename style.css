@@ -27,7 +27,7 @@ body{
     top: 50%;
     transform: translate(-50%);
     border-radius: 20px;
-    box-shadow: 0 30px 50px #000000;
+    box-shadow: 0 30px 50px #505050;
     transition: .5s;
 }
 .item:nth-child(1),
@@ -71,13 +71,11 @@ body{
     display: block;
 }
 .item .name{
-    white-space: nowrap;
     font-size: 40px;
     font-weight: bold;
     opacity: 0;
     animation: showcontent 1s ease-in-out 1 forwards;
 }
-
 .item .des{
     margin: 20px 0;
     opacity: 0;
