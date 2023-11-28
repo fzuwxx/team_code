@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+.main{
+    width: 1200px;
+    margin: auto;
+}
+.header,.nav,.container,.footer{
+    float: left;
+    width: 100%;
+    box-sizing: border-box;
+}
+.nav
+{
+    position: fixed;
+    margin-top: 10px;
+}
+/* .container{
+    float: left;
+    width: 95%;
+    box-sizing: border-box;
+} */
+.header{
+    /* background: #ccc; */
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+    /* margin-bottom: 50px; */
+}
+/* .nav{
+    background: #333;
+}
+.nav a{
+    color: #fff;
+    padding: 10px 20px;
+    display: inline-block;
+}
+.nav a:hover{
+    background: #bbb;
+    color: #000;
+} */
+.lside{
+    width: 200px;
+    float: left;
+}
+.rside{
+    width: 200px;
+    float: right;
+}
+.content{
+    margin: 0px 205px;
+}
+.lside,.rside,.content{
+    padding: 5px;
+}
+.footer{
+    padding: 10px;
+    background: #ccc;
+    text-align: center;
+}
+@media screen and (max-width:700px){
+    .lside,.rside,.content{
+        width: 100%;
+        margin: 0px;
+    }
+}
+.spli{
+    width: 48%;
+    height: 250px;
+    float: left;
+    padding: 5px;
+    margin-left: 5px;
+}
+.ti{
+    color: #fff;
+    width: 49%;
+    float: left;
+    margin-left: 5px;
+}
+.t,.p {
+display:flex;
+overflow: hidden;
+}
+
+.title,.para {
+    color: #fff;
+    font-size: 55px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    display:inline-block;
+    animation-name:hc;
+    animation-duration: .5s;
+    transition: all 600ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    animation-fill-mode: both;
+    text-align: center;
+}
+
+@keyframes hc{
+from {transform: translateY(30%);opacity: 0;}
+to {transform: translateY(0%);opacity: 1;}
+}
+body {
+    background-image: url("/static/非机动车1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* 如果您希望背景图片固定而不滚动，请添加这行 */
+    background-position: center center; /* 将背景图片居中显示 */
+}
+.ll{
+    color: #fff;
+}
+.tit{
+    color: #fff;
+}
+.jso{
+    color: #fff;
+}
+
+.nav{
+    height: 40px;
+    background: #5e5454; 
+    box-shadow: 0 1px 2px #666;
+    /* position: fixed; */
+    /* transform: translateY(110px); */
+    /* margin-bottom: 110px; */
+}
+
+.btli{
+    float: left;
+    width: 100px;
+    line-height: 40px;
+    text-align: center;
+}
+.navlist a{
+    color: #fff;
+    display: block;
+}
+.navlist a:hover{
+    background: #666;
+   
+}
+.droplist{
+    background: #333;
+    box-shadow: 0 1px 2px #333;
+    display: none;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.btli:hover .droplist{
+    display: block;
+}
+.droplist li{
+    border-top: 1px solid #666;
+}
+.titi{
+    margin-top: 20px;
+}
